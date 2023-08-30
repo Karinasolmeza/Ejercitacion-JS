@@ -188,6 +188,19 @@ console.log(esPrimo(15));  // Esto imprimirá "false" porque 15 no es primo
 console.log(esPrimo(1));   // Esto imprimirá "false" porque 1 no es primo
 console.log(esPrimo(0));   // Esto imprimirá "false" porque 0 no es primo
 
+function esPrimo2(numero){
+if (numero <= 1) {
+  return false;
+}
+for (let i = 2; i < numero; i++) {
+  if (numero % i === 0) {
+    return false;
+  }
+}
+return true;
+}
+console.log(esPrimo(7))
+
 //Escribe una función que reciba un valor booleano y retorne “Soy verdadero”
 //si su valor es true y “Soy falso” si su valor es false.
 //Escribe tu código aquí
